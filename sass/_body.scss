@@ -1,0 +1,94 @@
+/*h2 {
+    background-color: #112031;
+    color: white;
+}*/
+.container_main{
+	margin-top: $xsmall;
+
+}
+
+.titulo_contacto {
+	font-size: 30px;
+	background-color: $secondary;
+	align-items: center;
+	color: $primary;
+}
+.texto_contacto {
+	font-size: 20px;
+	font-style: normal;
+}
+.btn {
+	background-color: $primary;
+	color: $secondary;
+	border-color: $primary;
+	&:hover {
+		background-color: $secondary;
+		color: $text-color;
+		border-color: $primary;
+	}
+}
+section {
+	.div_niveles {
+		transition: all 1s;
+		box-shadow: 5px 5px 5px #345B63;
+		&:hover {
+			height: 110%;
+			width: 110%;
+		}
+	}
+	div {
+		div {
+			div {
+				.card-body {
+					background-color: $primary;
+					color: $secondary;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+.card-body {
+	h6 {
+		color: $primary;
+		font-size: 150%;
+	}
+}
+.card-text {
+	color: $text-color;
+}
+#card-body {
+	background-color: $secondary;
+	color: $text-color;
+}
+
+div {
+	.card-img-overlay {
+		.card-text {
+			font-weight: bold !important;
+			background-color: $primary !important;
+			color:$secondary !important;
+
+		}
+	}
+}
+
+
+img.d-flex {
+	width: 300px;
+	height: 300px;
+}
+.media {
+	margin: 2rem;
+}
+.titulo_ins {
+	text-align: center;
+	font-size: 30px;
+	background-color: $primary;
+	color: $secondary;
+}
+.img {
+	align-items: center;
+}
+

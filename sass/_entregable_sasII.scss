@@ -1,0 +1,49 @@
+$fuente: Verdana, Geneva, Tahoma, sans-serif;;
+$color-principal:#112031;
+$color-secundario: #F2F2F2;
+$color-hiper: #4f6e92;
+$color-contraste: #222326;
+
+html, body {
+    font-family: $fuente;
+    color: $color-secundario;
+    background-color: $color-contraste;
+}
+
+h1, h2, h3, h4 {
+    color: $color-principal;
+}
+
+a {
+    color: $color-hiper;
+}
+
+@mixin caja($color-fondo, $color-texto, $ancho, $alto) {
+    font-family: $fuente;
+    color: $color-texto;
+    background-color: $color-fondo;
+    height: $alto;
+    width: $ancho;
+}
+
+$colores: (
+azul: #112031,
+gris: grey,
+blanco: #F2F2F2,
+negro: black
+);
+
+@each $color-caja, $color in $colores {
+    .caja-#{$color-caja} {
+        @include caja ($color-contraste, $color, 400px, 600px)
+    }
+}
+
+
+.color-azul{
+    color:map-get($colores, azul);
+}
+
+.color-gris {
+    color:map-get($colores, gris);
+}
